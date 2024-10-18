@@ -1,0 +1,80 @@
+.contact-container {
+    padding: 0;
+    min-height: 100vh;
+    color: #333;
+  }
+  
+  #space {
+    background-color: #61dafb; /* Blue background */
+    height: 10vh; /* Space above content */
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding: 20px;
+    margin: 0; /* No margin on navbar */
+    position: fixed; /* Fix navbar to the top */
+    width: 100%; /* Full width */
+    top: 0; /* Align to the top */
+    z-index: 1000; /* Stay above other elements */
+  }
+  
+  .contact-content {
+    margin-top: 80px; /* Adjust for fixed navbar height */
+    text-align: center; /* Center text */
+  }
+  
+  .contact-title {
+    font-size: 2.5em;
+    margin-bottom: 20px; /* Space below title */
+  }
+  
+  .contact-description {
+    margin-bottom: 30px; /* Space below description */
+  }
+  
+  .concontact-methods {
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center child items horizontally */
+    margin-top: 20px; /* Space above contact methods */
+  }
+  
+  .contact-item {
+    background: #fff; /* White background for items */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px; /* Padding for items */
+    margin: 15px 0; /* Space between items */
+    width: 80%; /* Width of items */
+  }
+  
+  .social-links {
+    display: flex;
+
+    align-items: center; /* Center links */
+    margin-top: 10px; /* Space above links */
+  }
+  
+  .social-link {
+    background: #61dafb; /* Background for links */
+    color: #333; /* Text color */
+    padding: 10px 20px; /* Padding for links */
+    border-radius: 5px; /* Rounded corners for links */
+    text-decoration: none; /* Remove underline */
+    margin: 5px 0; /* Space between links */
+    transition: background 0.3s; /* Smooth background transition */
+  }
+  
+  .social-link:hover {
+    background: #4db8e0; /* Darker blue on hover */
+  }
+  
+  .footer {
+    text-align: center;
+    margin-top: 40px; /* Space above footer */
+  }
+  

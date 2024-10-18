@@ -1,13 +1,157 @@
-body {
+/* Global Styles */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  padding: 2vh;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Content Styles */
+.content {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Intro Text */
+.intro-text {
+  font-size: 4rem; /* Increased size for boldness */
+  font-weight: bold; /* Makes text bold */
+  color: #333;
+  margin-right: 20px; /* Space between text and photo */
+}
+
+/* Profile Photo */
+.profile-photo {
+  border-radius: 50%;
+  width: 37.5vw; /* Increased responsive width for 0.5x bigger */
+  height: 37.5vw; /* Increased responsive height for 0.5x bigger */
+  max-width: 300px; /* Increased max size */
+  max-height: 300px; /* Increased max size */
+  object-fit: cover; /* Ensures the image covers the area */
+  border: 5px solid #61dafb; /* Border color and thickness */
+  transition: border 0.3s ease; /* Transition for smooth hover effect */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .profile-photo {
+    width: 35vw; /* Responsive width */
+    height: 35vw; /* Responsive height */
+    max-width: 200px; /* Adjusted max size */
+    max-height: 200px; /* Adjusted max size */
+    border: 6px solid #61dafb; /* Increased border thickness */
+  }
+  
+  .intro-text {
+    font-size: 3rem; /* Slightly smaller for medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-photo {
+    width: 45vw; /* Responsive width */
+    height: 45vw; /* Responsive height */
+    max-width: 150px; /* Further adjusted max size */
+    max-height: 150px; /* Further adjusted max size */
+    border: 7px solid #61dafb; /* Further increased border thickness */
+  }
+  
+  .intro-text {
+    font-size: 2.5rem; /* Smaller for small screens */
+  }
+}
+
+/* Button Styles */
+.button-container {
+  display: flex;
+  justify-content: center; /* Center the button */
+  margin-top: 20px; /* Space above the button */
+}
+
+.about-button {
+  padding: 10px 20px; /* Padding around the button */
+  font-size: 1.2rem; /* Font size */
+  background-color: #61dafb; /* Button color */
+  color: black; /* Text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer on hover */
+  transition: background-color 0.3s; /* Smooth background color change */
+}
+
+.about-button:hover {
+  background-color: #5bc0eb; /* Darker shade on hover */
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 16px; /* Add some padding for better clickability */
+}
+
+.nav-links a:hover {
+  background-color: #61dafb; /* Change background on hover */
+  border-radius: 4px; /* Optional: add border-radius for rounded corners */
+}
+.download-resume {
+  color: #ffffff; /* Change to match your navbar color */
+  text-decoration: none;
+  margin-left: 20px; /* To space out from other items */
+}
+
+.download-resume:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+#space {
+  background-color: #61dafb;
+  height: 10vh;
 }

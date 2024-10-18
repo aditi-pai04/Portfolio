@@ -1,0 +1,57 @@
+.projects-container {
+  padding: 0;
+  min-height: 100vh;
+  color: #333;
+}
+#space {
+    background-color: #61dafb;
+    height: 10vh;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  padding: 20px;
+  margin: 0; /* Ensure no margin on navbar */
+  position: fixed; /* Fix the navbar to the top */
+  width: 100%; /* Ensure the navbar takes full width */
+  top: 0; /* Align to the very top of the viewport */
+  z-index: 1000; /* Make sure it stays above other elements */
+}
+
+.content {
+  margin-top: 80px; /* Adjust margin-top to account for fixed navbar height */
+  text-align: center; /* Center text */
+}
+
+.projects-title {
+  font-size: 2.5em;
+  margin-bottom: 20px; /* Space below title */
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column; /* Stack project items vertically */
+  align-items: center; /* Center project items */
+  padding: 20px; /* Padding for the list */
+}
+
+.project-item {
+  background: #fff; /* White background for project items */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  padding: 20px; /* Padding for project items */
+  margin: 15px 0; /* Vertical spacing between project items */
+  width: 80%; /* Width of project items */
+}
+
+.project-item h2 {
+  font-size: 1.5em; /* Title size for project */
+  margin-bottom: 10px; /* Space below title */
+}
+
+.project-item p {
+  font-size: 1em; /* Description size */
+  line-height: 1.5; /* Line height for readability */
+}
