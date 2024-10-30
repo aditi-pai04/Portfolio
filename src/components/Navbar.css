@@ -1,0 +1,39 @@
+/* Navbar Container */
+.navbar {
+    background-color: #fecce3; /* Soft pink background */
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Soft shadow for depth */
+  }
+  
+  /* Navbar Links */
+  .navbar-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem; /* Equal spacing between items */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar-links li {
+    margin: 0;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    color: #333; /* Soft contrast for readability */
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-links a:hover {
+    color: #fe91a2; /* Darker pink on hover */
+  }
+  

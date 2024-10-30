@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  background-color: #ffffff; /* White background for contrast */
+}
+
+.content {
+  padding-top: 80px; /* Offset for the fixed navbar */
+  text-align: center;
+}

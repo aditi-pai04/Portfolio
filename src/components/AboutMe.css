@@ -1,0 +1,22 @@
+.about-me {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    height: 90vh; /* Full height of the viewport */
+    text-align: center; /* Center text */
+    padding: 0.05vh 5vw 0.05vh; /* Responsive padding (top, horizontal, bottom) */
+    background-color: #f9f9f9; /* Light background color */
+    margin-top: 8vh;
+  }
+  
+  .about-me h2 {
+    font-size: 4vw; /* Responsive font size for heading */
+    margin-bottom: 2vh; /* Responsive space below heading */
+  }
+  
+  .about-me p {
+    font-size: 2vw; /* Responsive font size for paragraph */
+    max-width: 50%; /* Max width for better readability, responsive */
+  }
+  

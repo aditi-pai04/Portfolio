@@ -1,0 +1,55 @@
+.projects {
+    margin-bottom: 8%; /* Space below the projects section */
+    padding-top: 6%; /* Space above the projects section */
+  }
+  
+  .projects h2 {
+    font-size: 4vw; /* Responsive font size */
+    margin-bottom: 1%; /* Space below heading */
+    font-family: 'Raleway', sans-serif; /* Softer font for heading */
+    text-align: center; /* Center the heading */
+  }
+  
+  .swiper {
+    /* Add any additional styling for the Swiper component if needed */
+  }
+  
+  .swiper-slide {
+    /* Add any additional styling for the Swiper slide if needed */
+  }
+  
+  .project-info {
+    display: flex;
+    flex-direction: column; /* Stack title, image, and description */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+    border-radius: 15px; /* Round corners */
+    margin-bottom: 3%; /* Space below each project */
+    background-color: white; /* Background for project info */
+    width: 100%; /* Ensure the project-info takes full width of the slide */
+  }
+  
+  .project-info h3 {
+    font-size: 2rem; /* Font size for project title */
+    margin: 10px 0; /* Space above and below the title */
+    font-family: 'Fredoka', serif; /* Font for project title */
+  }
+  
+  .project-info img {
+    max-width: 20%; /* Responsive image size */
+    max-height: 20%; /* Limit image height */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 10%; /* Round corners for image */
+    margin: 2% 0; /* Space above and below the image */
+    border: 5px solid #fecce3; /* Border for the image */
+  }
+  
+  .project-info p {
+    font-size: 1rem; /* Font size for project description */
+    color: #666; /* Color for project description */
+    text-align: center; /* Center text */
+  }
+  
+  /* Add any additional styles for the Swiper navigation or pagination if needed */
+  

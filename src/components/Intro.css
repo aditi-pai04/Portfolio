@@ -1,0 +1,45 @@
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    height: calc(100vh - 80px); /* Remaining space below navbar */
+    text-align: center; /* Center text */
+  }
+  
+  .intro-content {
+    display: flex;
+    justify-content: center; /* Center the content */
+    align-items: center; /* Center items vertically */
+    width: 80%; /* Control width to keep it centered */
+  }
+  
+  .name-role {
+    display: flex; /* Use flexbox for side-by-side layout */
+    flex-direction: column; /* Align name and role vertically */
+    align-items: center; /* Center horizontally */
+    margin-right: 2vw; /* Responsive spacing between text and image */
+  }
+  
+  .name-role h1 {
+    font-size: 6vw; /* Responsive font size based on viewport width */
+    margin: 0; /* Remove margin */
+  }
+  
+  .role {
+    font-size: 4vw; /* Responsive font size for "Student" */
+    line-height: 1; /* Adjust line height */
+  }
+  
+  .profile-photo {
+    width: 18vw; /* Responsive width based on viewport width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Optional: make it circular */
+    border: 4px solid #fecce3;
+  }
+  
+  /* Optional: Adjust the height of the intro to ensure proper spacing */
+  .intro-content {
+    height: 25%; /* Make the content height take up a quarter of the page */
+  }
+  
