@@ -19,4 +19,41 @@
     font-size: 2vw; /* Responsive font size for paragraph */
     max-width: 50%; /* Max width for better readability, responsive */
   }
+
+  @media (max-width: 720px) {
+    .about-me {
+      height: auto; /* Adjust to fit content */
+      padding: 10vh 8vw !important;   /* More padding for smaller screens */
+    }
+  
+    .about-me h2 {
+      font-size: 9vw; /* Larger font size for headings on mobile */
+      margin-bottom: 4vh; /* Increased margin below heading */
+    }
+  
+    .about-me p {
+      font-size: 3vw; /* Larger font size for better readability */
+      max-width: 80%; /* Increase width to occupy more screen space */
+      line-height: 1.6; /* Add line height for easier reading */
+    }
+  }
+
+  /* Mobile-specific styles */
+@media (max-width: 480px) {
+  .about-me {
+    height: auto; /* Adjust to fit content */
+    padding: 10vh 8vw !important;   /* More padding for smaller screens */
+  }
+
+  .about-me h2 {
+    font-size: 9vw; /* Larger font size for headings on mobile */
+    margin-bottom: 4vh; /* Increased margin below heading */
+  }
+
+  .about-me p {
+    font-size: 5vw; /* Larger font size for better readability */
+    max-width: 80%; /* Increase width to occupy more screen space */
+    line-height: 1.6; /* Add line height for easier reading */
+  }
+}
   

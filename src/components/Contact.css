@@ -59,14 +59,14 @@
     }
   
     .contact-info {
-      flex-direction: column; /* Stack icons vertically on small screens */
+      /* flex-direction: column; Stack icons vertically on small screens */
       gap: 2vh; /* Space between stacked icons */
     }
   }
   
   @media (max-width: 480px) {
     .contact-title {
-      font-size: 4vw; /* Title font size for very small screens */
+      font-size: 7vw; /* Title font size for very small screens */
     }
   
     .icon {

@@ -3,7 +3,8 @@ import SwiperCore from 'swiper/core';
 import { Navigation, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
-import profilePhoto from './image.jpg';
+import sdd from './sdd.png';
+import gmart from './glidemart.png'
 import './Projects.css'
 import './index.css';
 
@@ -11,18 +12,18 @@ SwiperCore.use([Navigation, Pagination]);
 
 const projects = [
   {
-    title: 'Project 1',
-    img: profilePhoto,
-    description: 'This is a description for Project 1.',
+    title: 'Skin disease Detection',
+    img: sdd,
+    description: 'An ensemble machine learning based skin disease detection system from images and symptoms.',
   },
   {
-    title: 'Project 2',
-    img: profilePhoto,
-    description: 'This is a description for Project 2.',
+    title: 'GlideMart',
+    img: gmart,
+    description: 'An e-commerce simple website for shopping across 5 categories.',
   },
   {
     title: 'Project 3',
-    img: profilePhoto,
+    img: sdd,
     description: 'This is a description for Project 3.',
   },
 ];

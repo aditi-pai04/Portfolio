@@ -1,45 +1,126 @@
+/* Default styling for large screens (above 1080px) */
 .intro {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
-    height: calc(100vh - 80px); /* Remaining space below navbar */
-    text-align: center; /* Center text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 80px);
+  text-align: center;
+  padding: 2vw;
+}
+
+.intro-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  max-width: 1200px; /* Limit max width */
+}
+
+.name-role {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 2vw;
+}
+
+.name-role h1 {
+  font-size: 4vw;
+  margin: 0;
+}
+
+.role {
+  font-size: 2.5vw;
+  line-height: 1;
+}
+
+.profile-photo {
+  width: 15vw;
+  height: auto;
+  border-radius: 50%;
+  border: 4px solid #fecce3;
+}
+
+.intro-content {
+  height: 30%;
+}
+
+/* Styling for medium screens (up to 1080px) */
+@media (max-width: 1080px) {
+  .intro {
+    height: calc(100vh - 60px); /* Adjust height */
+    padding: 3vw;
   }
-  
+
   .intro-content {
-    display: flex;
-    justify-content: center; /* Center the content */
-    align-items: center; /* Center items vertically */
-    width: 80%; /* Control width to keep it centered */
+    width: 80%; /* Adjust width */
   }
-  
-  .name-role {
-    display: flex; /* Use flexbox for side-by-side layout */
-    flex-direction: column; /* Align name and role vertically */
-    align-items: center; /* Center horizontally */
-    margin-right: 2vw; /* Responsive spacing between text and image */
-  }
-  
+
   .name-role h1 {
-    font-size: 6vw; /* Responsive font size based on viewport width */
-    margin: 0; /* Remove margin */
+    font-size: 5vw;
   }
-  
+
   .role {
-    font-size: 4vw; /* Responsive font size for "Student" */
-    line-height: 1; /* Adjust line height */
+    font-size: 3.5vw;
   }
-  
+
   .profile-photo {
-    width: 18vw; /* Responsive width based on viewport width */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 50%; /* Optional: make it circular */
-    border: 4px solid #fecce3;
+    width: 20vw;
   }
-  
-  /* Optional: Adjust the height of the intro to ensure proper spacing */
+}
+
+/* Styling for tablets (up to 768px) */
+@media (max-width: 768px) {
   .intro-content {
-    height: 25%; /* Make the content height take up a quarter of the page */
+    flex-direction: column; /* Stack items vertically */
+    width: 90%;
   }
-  
+
+  .name-role {
+    margin-bottom: 3vw;
+    text-align: center;
+  }
+
+  .name-role h1 {
+    font-size: 7vw;
+  }
+
+  .role {
+    font-size: 5vw;
+  }
+
+  .profile-photo {
+    width: 25vw;
+    margin-top: 3vw;
+  }
+}
+
+/* Styling for mobile phones (up to 480px) */
+@media (max-width: 480px ) {
+  .intro {
+    padding: 4vw !important;
+  }
+
+  .intro-content {
+    width: 95%;
+    padding: 2vw !important;
+  }
+
+  .name-role h1 {
+    font-size: 12vw !important;
+  }
+
+  .role {
+    font-size: 7vw;
+  }
+
+  .profile-photo {
+    width: 60vw !important;
+    margin-top: 4vw;
+  }
+
+  .name-role {
+    margin-bottom: 4vw;
+    text-align: center;
+  }
+}
